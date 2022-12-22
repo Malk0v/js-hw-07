@@ -13,3 +13,12 @@
 
 // - Категория: Животные
 // - Количество элементов: 4
+
+
+
+const navEl = document.querySelector('#categories');
+const navE = navEl.querySelectorAll('h2');
+const el = navEl.children
+console.log(navEl);
+console.log(navEl.children);
+console.log(el.textContent);
