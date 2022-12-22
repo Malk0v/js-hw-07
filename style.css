@@ -1,0 +1,29 @@
+.body_style{
+    background-color: rgba(227, 224, 224, 0.369);
+}
+.magicBtn{
+    display:flex;
+    margin:10px auto 10px;
+    background-color: rgba(228, 92, 124, 0.269);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing:0.1cm;
+    border-radius: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pic{
+    list-style: none;
+}
+
+.pic image{
+    width: 125px;
+    height: 75px;
+    margin: 1%;
+    padding: 10px;
+    background-color: antiquewhite;
+    outline: tomato solid 1px;
+}
