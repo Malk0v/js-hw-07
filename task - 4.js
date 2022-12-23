@@ -35,6 +35,7 @@ incrementRef.addEventListener('click', increment);
 decrementRef.addEventListener('click', decrement);
 
 
+
 // const onCounterValue = document.querySelector('#value');
 // const decrementRef = document.querySelector('[data-action="decrement"]');
 // const incrementRef = document.querySelector('[data-action="increment"]');
