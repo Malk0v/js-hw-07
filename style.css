@@ -1,14 +1,14 @@
 .body_style{
     background-color: rgba(227, 224, 224, 0.369);
 }
-.magicBtn{
-    display:flex;
+/* .magicBtn{
+    
     margin:10px auto 10px;
     background-color: rgba(228, 92, 124, 0.269);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing:0.1cm;
     border-radius: 10px;
-}
+} */
 
 .box{
     display: flex;
