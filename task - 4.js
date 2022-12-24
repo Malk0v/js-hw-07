@@ -53,9 +53,8 @@ decrementRef.addEventListener('click', decrement);
 window.addEventListener('keydown', onUpKeyPress);
 window.addEventListener('keydown', onDownKeyPress);
 
-
 function consol() {
-    console.log(event)
+    console.log(event);
 }
 window.addEventListener('keydown' ,consol);
 
