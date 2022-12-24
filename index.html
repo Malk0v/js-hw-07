@@ -12,30 +12,66 @@
 
 <body>
     <ul class="body">
-        <li class="a"><a href="./task-1.html">1  Что то в консоли</a></li>
-        <li class="a"><a href="./task-3.html">3  Создание галлереи</a></li>
-        <li class="a"><a href="./task-2.html">2  Добавляем список продуктов</a></li>
-        <li class="a"><a href="./task-4.html">4  Счетчик</a></li>
-        <li class="a"><a href="./task-5.html">5  Текущее значение</a></li>
-        <li class="a"><a href="./task-6.html">6  Потеря фокуса</a></li>
-        <li class="a"><a href="./task-7.html">7  Реагируем на изменение</a></li>
-        <li class="a"><a href="./task-8.html">8  Созданиe и очисткa коллекции элементов</a></li>
-        <li class="a"><a href="./task-9.html">9  На всякий случай</a></li>
+        <li class="a"><a href="./task-1.html">1 Что то в консоли</a></li>
+        <li class="a"><a href="./task-3.html">3 Создание галлереи</a></li>
+        <li class="a"><a href="./task-2.html">2 Добавляем список продуктов</a></li>
+        <li class="a"><a href="./task-4.html">4 Счетчик</a></li>
+        <li class="a"><a href="./task-5.html">5 Текущее значение</a></li>
+        <li class="a"><a href="./task-6.html">6 Потеря фокуса</a></li>
+        <li class="a"><a href="./task-7.html">7 Реагируем на изменение</a></li>
+        <li class="a"><a href="./task-8.html">8 Созданиe и очисткa коллекции элементов</a></li>
+        <li class="a"><a href="./task-9.html">9 На всякий случай</a></li>
         <li class="a"><a href="./task-test.html">Test</a></li>
     </ul>
-
+    
+    <div class="container">
+        <div id="time">
+            <div class="circle" style="--color: #ff2972">
+                <div class="dots h_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--color: #fee800">
+                <div class="dots m_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--color: #04fc43">
+                <div class="dots s_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            <div class="ap">
+                <div id="ampm">AM</div>
+            </div>
+        </div>
+    </div>
+    
     <style>
-        .body{
+        .body {
             margin: 50px;
             padding: 30px;
             list-style: none;
             background-color: rgba(244, 241, 241, 0.654);
             border-radius: 20px;
         }
-        .a a{
+    
+        .a a {
             color: rgb(34, 6, 6);
             text-decoration: none;
-            letter-spacing: 0,5px;
+            letter-spacing: 0, 5px;
         }
     </style>
+    
+    <script src="./test.js"></script>
+</body>
 </html>
