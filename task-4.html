@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body class="body">
+    <button><a href="./index.html">Home</a></button>
+
+    <div class="all">
+        <div class="count" id="counter">
+            <button type="button" class="magicBtnRed" data-action="decrement">-1</button>
+            <span id="value" class="span">0</span>
+            <button type="button" class="magicBtnGreen" data-action="increment">+1</button>
+        </div>
+    </div>
+    
+    <style>
+        .all {
+            width: 500px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .count {
+            background-color: rgba(234, 233, 233, 0.829);
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            border-radius: 20px;
+        }
+    
+        .magicBtnRed {
+            padding: 10px;
+            background-color: rgba(231, 198, 138, 0.458);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 0.1cm;
+            border-radius: 10px;
+        }
+    
+        .magicBtnRed:hover {
+            background-color: rgb(242, 17, 9);
+            padding: 8px;
+            transform: translate(1px, 2px);
+            transition: 1s;
+        }
+    
+        .magicBtnGreen {
+            padding: 10px;
+            background-color: rgba(97, 194, 146, 0.39);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 0.1cm;
+            border-radius: 10px;
+        }
+    
+        .magicBtnGreen:hover {
+            background-color: rgba(37, 225, 12, 0.982);
+            padding: 12px;
+            transform: translate(1px);
+            transition: 1s;
+        }
+    
+        .span {
+            color: rgb(140, 7, 7);
+            min-width: 35px;
+            margin: 20px;
+            padding: 0 20px;
+            background-color: #fff;
+            outline: 1px solid rgb(118, 9, 201);
+            border-radius: 5px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 25px;
+        }
+    </style>
+    
+    <script src="task - 4.js" type="module"></script>
+</body>
+</html>
