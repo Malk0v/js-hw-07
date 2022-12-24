@@ -17,7 +17,23 @@ let counterValue = 0;
 
 const updateValueUi = () => {
     onCounterValue.textContent = counterValue;
-}
+};
+
+function onUpKeyPress(event) {
+    const ARROWuP_KEY_CODE = 'ArrowUp'
+    const isEscKey = event.code === ARROWuP_KEY_CODE;
+    if (isEscKey) {
+        increment();
+    }
+};
+
+function onDownKeyPress(event) {
+    const ARROWdOWN_KEY_CODE = 'ArrowDown'
+    const isEscKey = event.code === ARROWdOWN_KEY_CODE;
+    if (isEscKey) {
+        decrement();
+    }
+};
 
 const increment = () => {
     counterValue += 1;
@@ -33,6 +49,15 @@ const decrement = () => {
 
 incrementRef.addEventListener('click', increment);
 decrementRef.addEventListener('click', decrement);
+
+window.addEventListener('keydown', onUpKeyPress);
+window.addEventListener('keydown', onDownKeyPress);
+
+
+function consol() {
+    console.log(event)
+}
+window.addEventListener('keydown' ,consol);
 
 
 
