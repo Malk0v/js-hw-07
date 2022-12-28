@@ -1,34 +1,24 @@
 // ## Задание 6
+// <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов"/>
 
 // Напиши скрипт, который бы при потере фокуса на инпуте, проверял его содержимое
 // на правильное количество символов.
-
-// ```html
-// <input
-//   type="text"
-//   id="validation-input"
-//   data-length="6"
-//   placeholder="Введи 6 символов"
-// />
-// ```
 
 // - Сколько символов должно быть в инпуте, указывается в его атрибуте
 //   `data-length`.
 // - Если введено подходящее количество, то `border` инпута становится зеленым,
 //   если неправильное - красным.
 
-// Для добавления стилей, используй CSS-классы `valid` и `invalid`.
+const validationInput = document.querySelector('#validation-input');
+validationInput.addEventListener('blur', onInputBlur);
 
-// ```css
-// #validation-input {
-//   border: 3px solid #bdbdbd;
-// }
-
-// #validation-input.valid {
-//   border-color: #4caf50;
-// }
-
-// #validation-input.invalid {
-//   border-color: #f44336;
-// }
-// ```
+function onInputBlur() {
+ if (event.currentTarget.value.length <= validationInput.getAttribute('data-length')) {
+        console.log('+');
+        validationInput.classList.remove('invalid')
+        validationInput.classList.add('valid');
+    } else {
+    console.log('-');
+    validationInput.classList.add('invalid');
+    }
+};
