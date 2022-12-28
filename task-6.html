@@ -8,8 +8,26 @@
 </head>
 <body>
     <button><a href="./index.html">Home</a></button>
-    <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов" <script src="task - 6.js"
 
-    type="module"></script>
+    <input type="text" id="validation-input" data-length="6" placeholder="Введи <= 6 символов">
+    
+    <style>
+    #validation-input {
+        padding: 5px;
+        border: 4px solid #bdbdbd;
+        border-radius: 6px;
+    }
+
+    #validation-input.valid {
+        border-color: #4caf50;
+    }
+
+    #validation-input.invalid {
+        border-color: #f44336;
+    }
+    </style>
+
+    <script src="task - 6.js" type="module"></script>
+
 </body>
 </html>
