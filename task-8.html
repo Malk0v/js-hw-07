@@ -8,13 +8,19 @@
 </head>
 <body>
     <button><a href="./index.html">Home</a></button>
-    <div id="controls">
-        <input type="number" min="0" max="100" step="1" />
-        <button type="button" data-action="render">Создать</button>
-        <button type="button" data-action="destroy">Очистить</button>
-    </div>
     
-    <div id="boxes"></div>
+    <form class="login-form">
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" />
+        </label>
+        
+        <button type="submit">Login</button>
+    </form>
     
     <script src="task - 8.js" type="module"></script>
 </body>
