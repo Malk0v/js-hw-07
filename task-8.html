@@ -7,7 +7,7 @@
     <title>8</title>
 </head>
 <body>
-    <button><a href="./index.html">Home</a></button>
+    <button class="home"><a href="./index.html">Home</a></button>
     
     <form class="login-form">
         <label>
@@ -20,7 +20,43 @@
         </label>
         
         <button type="submit">Login</button>
+        <button type="reset">Очистить</button>
     </form>
+
+    <style>
+.home{
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.login-form{
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+max-width: 800px;
+background-color: rgba(225, 228, 228, 0.286);
+border-radius: 10px;
+}
+
+.login-form label{
+    margin: 10px;
+}
+.login-form input{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login-form button{
+    margin-right: auto;
+
+    padding: 10px;
+    border-radius: 7px;
+}
+
+    </style>
     
     <script src="task - 8.js" type="module"></script>
 </body>
