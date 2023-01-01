@@ -14,7 +14,6 @@ const textColorNumber = document.querySelector('.color');
 const allColor = document.querySelector('.a');
 
 changeBtn.addEventListener('click', () => {
-    console.log('+');
     allColor.style.fontFamily = 'fantasy';
     allColor.style.backgroundColor = getRandomHexColor();
     textColorNumber.textContent = allColor.style.backgroundColor;
